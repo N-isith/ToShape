@@ -5,15 +5,99 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/shapebg"
+
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter Weight"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter Height"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/submitcolor"
+            android:paddingVertical="10dp"
+            android:text="Create BMI"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/thename"
+            android:layout_marginTop="75dp"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BMItitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMI :"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/BMIrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18.43"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/rateColor"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:background="@drawable/statusbtnframe"
+            android:textStyle="bold"
+            android:textSize="31dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="80dp"
+            android:paddingVertical="3dp"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
