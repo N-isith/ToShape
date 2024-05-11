@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ToShape</string>
+    <string name="createbtn">Create BMI</string>
+    <string name="updatebtn">ReCreate BMI</string>
+    <string name="delbtn">Delete BMI</string>
+    <string name="bmitxt">BMI :</string>
+    <string name="descriptionline1">
+        Managing a good BMI is a good practice since it is a measure of a health condition.
+    </string>
+    <string name="descriptionlin2">
+        ToShape App will allow you to calculate your BMI and indicate you on which health level you are in currently.
+    </string>
 </resources>
