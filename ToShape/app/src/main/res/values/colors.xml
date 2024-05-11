@@ -5,4 +5,7 @@
     <color name="submitcolor">#FF9800</color>
     <color name="rateColor">#2196F3</color>
     <color name="statuscolor">#1DD124</color>
+    <color name="descolor">#0C2347</color>
+    <color name="updatecolor">#673AB7</color>
+    <color name="delcolor">#F44336</color>
 </resources>
