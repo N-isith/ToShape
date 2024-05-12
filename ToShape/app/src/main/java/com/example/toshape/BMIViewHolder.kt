@@ -7,4 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 class BMIViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val weight: TextView = itemView.findViewById(R.id.tv_bmi_weight)
     val height: TextView = itemView.findViewById(R.id.tv_bmi_height)
+
+    fun bind(bmi: BMIs) {
+        weight.text = bmi.weight
+        height.text = bmi.height
+    }
 }
