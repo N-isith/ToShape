@@ -2,7 +2,7 @@
     android:shape="rectangle">
     <fill android:color="@color/submitcolor" />
     <stroke
-    android:width="5dp"
-    android:color="@color/submitcolor" />
-    <corners android:radius="4dp" />
+    android:width="50dp"
+    android:color="@color/taskcolor" />
+    <corners android:radius="2dp" />
 </shape>

@@ -3,9 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="submitcolor">#FF9800</color>
-    <color name="rateColor">#2196F3</color>
+    <color name="rateColor">#673AB7</color>
     <color name="statuscolor">#1DD124</color>
+    <color name="bmicolor">#AF450B</color>
     <color name="descolor">#0C2347</color>
     <color name="updatecolor">#673AB7</color>
     <color name="delcolor">#F44336</color>
+    <color name="taskcolor">#CDDC39</color>
 </resources>
