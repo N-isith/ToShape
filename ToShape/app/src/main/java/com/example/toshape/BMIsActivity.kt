@@ -33,11 +33,8 @@ class BMIsActivity : AppCompatActivity() {
         // Get the bmi's position or ID passed from MainActivity
         val bmiId = intent.getIntExtra("BMI_ID", -1)
         if (bmiId != -1) {
-            // Fetch the bmi details based on the bookId.
-            // For demonstration purposes, I'm using a sample list.
-            // In a real application, you might fetch this from a database or other data source.
             val bmi = fetchBmiDetails(bmiId)
-            // Update the UI with the book details
+            // Update the UI with the bmi details
             tvweight.text = bmi.weight
             tvHeight.text = bmi.height
             btnEdit.setOnClickListener {
@@ -46,13 +43,10 @@ class BMIsActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         } else {
-            // Handle error case where no valid bmiId is provided
             Toast.makeText(this, "Error fetching BMI details.", Toast.LENGTH_SHORT).show()
         }
     }
     private fun fetchBmiDetails(bmiId: Int): BMIs {
-        // This is a sample function. In a real app, fetch the bmi details based on the bmiId.
-        // For demonstration, I'm returning a sample bmi.
         return BMIs("Sample Weight", "Sample Height")
     }
 }
