@@ -15,14 +15,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rvBMIs: RecyclerView
     private lateinit var adapter: BMIAdapter
     private val bmis: List<BMIs> = listOf(
-        // Sample data for demonstration purposes
+        // hardcoded values
         BMIs("45KG", "154cm"),
         BMIs("67KG", "172cm"),
         BMIs("62KG", "166cm"),
         BMIs("77KG", "178cm"),
         BMIs("71KG", "182cm"),
-
-        // ... add more books here
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
